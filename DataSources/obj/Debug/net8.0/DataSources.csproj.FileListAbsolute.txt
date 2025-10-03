@@ -1,0 +1,14 @@
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\bin\Debug\net8.0\Json\Albums.json
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\bin\Debug\net8.0\Text\Albums.txt
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\bin\Debug\net8.0\XML\Albums.xml
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\bin\Debug\net8.0\DataSources.deps.json
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\bin\Debug\net8.0\DataSources.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\bin\Debug\net8.0\DataSources.pdb
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.AssemblyInfo.cs
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\refint\DataSources.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.pdb
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\ref\DataSources.dll

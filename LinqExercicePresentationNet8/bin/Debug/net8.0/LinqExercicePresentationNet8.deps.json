@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LinqExercicePresentationNet8/1.0.0": {
+        "dependencies": {
+          "DataSources": "1.0.0"
+        },
+        "runtime": {
+          "LinqExercicePresentationNet8.dll": {}
+        }
+      },
+      "DataSources/1.0.0": {
+        "runtime": {
+          "DataSources.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LinqExercicePresentationNet8/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataSources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
