@@ -1,0 +1,64 @@
+# This .gitignore file is generated for a C# project. It excludes common build artifacts, IDE files, and temporary files.
+
+# Binaries and executables
+*.exe
+*.dll
+*.pdb
+*.exe.config
+*.dll.config
+
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+
+# Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.swp
+*.swo
+*~
+
+# Test results
+TestResults/
+*.testsettings
+
+# ASP.NET Core
+wwwroot/lib/
+appsettings.json
+appsettings.*.json
+
+# Entity Framework
+*.mdf
+*.ldf
+
+# Windows
+[Tt]humbs.db
+*.stackdump
+
+# macOS
+.DS_Store
+
+# Linux
+*~
