@@ -26,3 +26,4 @@ C:\Users\Utilisateur\Desktop\CSharpThomas\CSharpAvance2025\obj\Debug\net8.0\refi
 C:\Users\Utilisateur\Desktop\CSharpThomas\CSharpAvance2025\obj\Debug\net8.0\CSharpAvance2025.pdb
 C:\Users\Utilisateur\Desktop\CSharpThomas\CSharpAvance2025\obj\Debug\net8.0\CSharpAvance2025.genruntimeconfig.cache
 C:\Users\Utilisateur\Desktop\CSharpThomas\CSharpAvance2025\obj\Debug\net8.0\ref\CSharpAvance2025.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\CSharpAvance2025\obj\Debug\net8.0\CSharpAvance2025.sourcelink.json

@@ -8,30 +8,30 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Update="POO\obj\Debug\net8.0\POO.AssemblyInfo.cs">
-        <Link>ZooManagement\obj\Debug\net8.0\POO.AssemblyInfo.cs</Link>
-      </Compile>
-      <Compile Update="POO\obj\Debug\net8.0\POO.GlobalUsings.g.cs">
-        <Link>ZooManagement\obj\Debug\net8.0\POO.GlobalUsings.g.cs</Link>
-      </Compile>
-      <Compile Update="ZooManagement\obj\Debug\net8.0\ZooManagement.AssemblyInfo.cs">
-        <Link>POO\obj\Debug\net8.0\ZooManagement.AssemblyInfo.cs</Link>
-      </Compile>
-      <Compile Update="ZooManagement\obj\Debug\net8.0\ZooManagement.GlobalUsings.g.cs">
-        <Link>POO\obj\Debug\net8.0\ZooManagement.GlobalUsings.g.cs</Link>
-      </Compile>
-      <Compile Update="ZooManagement\Program.cs">
-        <Link>POO\Program.cs</Link>
-      </Compile>
+        <Compile Update="POO\obj\Debug\net8.0\POO.AssemblyInfo.cs">
+            <Link>ZooManagement\obj\Debug\net8.0\POO.AssemblyInfo.cs</Link>
+        </Compile>
+        <Compile Update="POO\obj\Debug\net8.0\POO.GlobalUsings.g.cs">
+            <Link>ZooManagement\obj\Debug\net8.0\POO.GlobalUsings.g.cs</Link>
+        </Compile>
+        <Compile Update="ZooManagement\obj\Debug\net8.0\ZooManagement.AssemblyInfo.cs">
+            <Link>POO\obj\Debug\net8.0\ZooManagement.AssemblyInfo.cs</Link>
+        </Compile>
+        <Compile Update="ZooManagement\obj\Debug\net8.0\ZooManagement.GlobalUsings.g.cs">
+            <Link>POO\obj\Debug\net8.0\ZooManagement.GlobalUsings.g.cs</Link>
+        </Compile>
+        <Compile Update="ZooManagement\Program.cs">
+            <Link>POO\Program.cs</Link>
+        </Compile>
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="POO\obj\Debug\net8.0\POO.GeneratedMSBuildEditorConfig.editorconfig">
-        <Link>ZooManagement\obj\Debug\net8.0\POO.GeneratedMSBuildEditorConfig.editorconfig</Link>
-      </None>
-      <None Update="ZooManagement\obj\Debug\net8.0\ZooManagement.GeneratedMSBuildEditorConfig.editorconfig">
-        <Link>POO\obj\Debug\net8.0\ZooManagement.GeneratedMSBuildEditorConfig.editorconfig</Link>
-      </None>
+        <None Update="POO\obj\Debug\net8.0\POO.GeneratedMSBuildEditorConfig.editorconfig">
+            <Link>ZooManagement\obj\Debug\net8.0\POO.GeneratedMSBuildEditorConfig.editorconfig</Link>
+        </None>
+        <None Update="ZooManagement\obj\Debug\net8.0\ZooManagement.GeneratedMSBuildEditorConfig.editorconfig">
+            <Link>POO\obj\Debug\net8.0\ZooManagement.GeneratedMSBuildEditorConfig.editorconfig</Link>
+        </None>
     </ItemGroup>
 
 </Project>

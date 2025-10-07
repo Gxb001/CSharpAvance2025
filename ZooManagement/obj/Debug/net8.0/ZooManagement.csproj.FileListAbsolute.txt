@@ -12,3 +12,4 @@ C:\Users\Utilisateur\Desktop\CSharpThomas\ZooManagement\obj\Debug\net8.0\refint\
 C:\Users\Utilisateur\Desktop\CSharpThomas\ZooManagement\obj\Debug\net8.0\ZooManagement.pdb
 C:\Users\Utilisateur\Desktop\CSharpThomas\ZooManagement\obj\Debug\net8.0\ZooManagement.genruntimeconfig.cache
 C:\Users\Utilisateur\Desktop\CSharpThomas\ZooManagement\obj\Debug\net8.0\ref\ZooManagement.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\ZooManagement\obj\Debug\net8.0\ZooManagement.sourcelink.json

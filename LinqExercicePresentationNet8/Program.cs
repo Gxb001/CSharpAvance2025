@@ -113,19 +113,23 @@ var allArtists = ListArtistsData.ListArtists;
 //     Console.WriteLine("Numéro de page invalide.");
 // }
 
-// Ex : 7 
-// Lire un fichier txt
-Console.WriteLine("Entrez une chaîne de caractères : ");
-string content = Console.ReadLine();
+// // Ex : 7 
+// // Lire un fichier txt
+// Console.WriteLine("Entrez une chaîne de caractères : ");
+// string content = Console.ReadLine();
+//
+// foreach (var line in File.ReadAllLines($@"{Directory.GetCurrentDirectory()}/Text/Albums.txt")
+//              .Where(line => string.IsNullOrEmpty(content) || line.Contains(content, StringComparison.OrdinalIgnoreCase)) 
+//              .OrderBy(line => line))
+// {
+//     Console.WriteLine(line);
+// }  
 
-foreach (var line in File.ReadAllLines($@"{Directory.GetCurrentDirectory()}/Text/Albums.txt")
-             .Where(line => string.IsNullOrEmpty(content) || line.Contains(content, StringComparison.OrdinalIgnoreCase)) 
-             .OrderBy(line => line))
-{
-    Console.WriteLine(line);
-}  
-
-
-
-
-
+// //Ex : 8 
+// // transformer allArtists en XML
+// Console.WriteLine("Conversion en XML");
+// var xml = new XDocument(
+//     new XElement("Albums",
+//         from artist in allArtists
+//         select new XElement("Artist", new XElement("Name", artist.Name), new XElement("ID", artist.ArtistId))));
+// Console.WriteLine(xml);

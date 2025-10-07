@@ -19,3 +19,4 @@ C:\Users\Utilisateur\Desktop\CSharpThomas\LinqExercicePresentationNet8\obj\Debug
 C:\Users\Utilisateur\Desktop\CSharpThomas\LinqExercicePresentationNet8\obj\Debug\net8.0\LinqExercicePresentationNet8.pdb
 C:\Users\Utilisateur\Desktop\CSharpThomas\LinqExercicePresentationNet8\obj\Debug\net8.0\LinqExercicePresentationNet8.genruntimeconfig.cache
 C:\Users\Utilisateur\Desktop\CSharpThomas\LinqExercicePresentationNet8\obj\Debug\net8.0\ref\LinqExercicePresentationNet8.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\LinqExercicePresentationNet8\obj\Debug\net8.0\LinqExercicePresentationNet8.sourcelink.json

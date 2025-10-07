@@ -1,73 +1,67 @@
-﻿
-namespace ZooManagement
+﻿namespace ZooManagement;
+
+public abstract class Animal // classe abstraite
 {
-    public abstract class Animal // classe abstraite
+    // constructeur de la classe mere(abstraite)
+    protected Animal(string name)
     {
-        private string _name;
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-
-        // constructeur de la classe mere(abstraite)
-        protected Animal(string name)
-        {
-            _name = name;
-        }
-        public abstract string MakeSound(); // polymorphisme
-    }
-    
-    public class Lion : Animal // classe Lio hérite de Animal
-    {
-        public Lion(string name) : base(name) { }
-
-        public override string MakeSound()
-        {
-            return "Roar";
-        }
+        Name = name;
     }
 
-    // pareil pour éléphant
-    public class Elephant : Animal
-    {
-        public Elephant(string name) : base(name) { }
+    public string Name { get; set; }
 
-        public override string MakeSound()
-        {
-            return "Trump Trump, pas Donald";
-        }
+    public abstract string MakeSound(); // polymorphisme
+}
+
+public class Lion : Animal // classe Lio hérite de Animal
+{
+    public Lion(string name) : base(name)
+    {
     }
 
-    
-    public class Zoo
+    public override string MakeSound()
     {
-        private List<Animal> _animals = new List<Animal>(); //encapsulation 
-        
-        public void AddAnimal(Animal animal)
-        {
-            _animals.Add(animal);
-        }
+        return "Roar";
+    }
+}
 
-        // faire parler tous les animaux
-        public void MakeAllAnimalsSpeak()
-        {
-            foreach (var animal in _animals)
-            {
-                Console.WriteLine($"{animal.Name} dit: {animal.MakeSound()}");
-            }
-        }
+// pareil pour éléphant
+public class Elephant : Animal
+{
+    public Elephant(string name) : base(name)
+    {
     }
 
-    // démo
-    class Program
+    public override string MakeSound()
     {
-        static void Main(string[] args)
-        {
-            Zoo zoo = new Zoo();
-            zoo.AddAnimal(new Lion("Simba"));
-            zoo.AddAnimal(new Elephant("Dumbo"));
-            zoo.MakeAllAnimalsSpeak();
-        }
+        return "Trump Trump, pas Donald";
+    }
+}
+
+public class Zoo
+{
+    private readonly List<Animal> _animals = new(); //encapsulation 
+
+    public void AddAnimal(Animal animal)
+    {
+        _animals.Add(animal);
+    }
+
+    // faire parler tous les animaux
+    public void MakeAllAnimalsSpeak()
+    {
+        foreach (var animal in _animals) Console.WriteLine($"{animal.Name} dit: {animal.MakeSound()}");
+    }
+}
+
+// démo
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        var zoo = new Zoo();
+        zoo.AddAnimal(new Lion("Simba"));
+        zoo.AddAnimal(new Elephant("Dumbo"));
+        zoo.MakeAllAnimalsSpeak();
     }
 }

@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExercicePresentationNet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooManagement", "ZooManagement\ZooManagement.csproj", "{A1E404C8-F803-4B42-8D5F-D7724FEDDA10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversionPrevisualisation", "ConversionPrevisualisation\ConversionPrevisualisation.csproj", "{0F36658C-733B-4C97-A44D-FCB095CCA737}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{A1E404C8-F803-4B42-8D5F-D7724FEDDA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1E404C8-F803-4B42-8D5F-D7724FEDDA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1E404C8-F803-4B42-8D5F-D7724FEDDA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

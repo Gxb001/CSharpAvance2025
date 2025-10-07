@@ -12,3 +12,4 @@ C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSourc
 C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\refint\DataSources.dll
 C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.pdb
 C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\ref\DataSources.dll
+C:\Users\Utilisateur\Desktop\CSharpThomas\DataSources\obj\Debug\net8.0\DataSources.sourcelink.json
