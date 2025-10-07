@@ -182,18 +182,39 @@ internal class Program
         foreach (var person in results) Console.WriteLine($"{person.Name}, {person.Age} ans, {person.City}");
     }
 
-    // Export vers CSV
+    // Export CSV
     private static void ExportToCsv(List<Person> people, string filePath)
     {
+        Console.WriteLine("Voulez-vous exporter tous les champs dans un fichier CSV ? (o/n)");
+        var exportAllFields = Console.ReadLine()?.ToLower() == "o";
+        List<string> fieldsToKeep;
+        if (!exportAllFields)
+        {
+            Console.WriteLine("Veuillez choisir les champs à exporter : 1-Name, 2-Age, 3-City (Ex : 1,2) : ");
+            var fieldMap = new Dictionary<string, string> { { "1", "Name" }, { "2", "Age" }, { "3", "City" } };
+            fieldsToKeep = Console.ReadLine()
+                .Split(',')
+                .Select(f => fieldMap.GetValueOrDefault(f.Trim()))
+                .Where(f => f != null)
+                .ToList();
+        }
+        else
+        {
+            fieldsToKeep = new List<string> { "Name", "Age", "City" };
+        }
+
         string EscapeCsvField(string field)
         {
             return $"\"{field.Replace("\"", "\"\"")}\"";
-        } // permet d'échapper les caractères spéciaux dans une chaîne CSV
+        }
 
-        var csv = "Name,Age,City\n" + string.Join("\n",
+        var header = string.Join(",", fieldsToKeep);
+        var csv = header + "\n" + string.Join("\n",
             people.Select(p =>
-                $"{EscapeCsvField(p.Name)},{EscapeCsvField(p.Age.ToString())},{EscapeCsvField(p.City)}"));
-        File.WriteAllText(filePath, csv); // écris le contenu dans un fichier CSV
+                string.Join(",", fieldsToKeep.Select(f =>
+                    EscapeCsvField(p.GetType().GetProperty(f)?.GetValue(p)?.ToString() ?? "")))
+            ));
+        File.WriteAllText(filePath, csv); // sauvegarde le fichier CSV
     }
 
     // static void ExportToCsv(List<Person> people, string filePath)
@@ -213,15 +234,43 @@ internal class Program
     // Export vers XML
     private static void ExportToXml(List<Person> people, string filePath)
     {
-        var doc = new XDocument( // crée un document XML
-            new XElement("People", // racine du document
-                people.Select(p => new XElement("Person",
-                    new XElement("Name", p.Name),
-                    new XElement("Age", p.Age),
-                    new XElement("City", p.City)
-                ))
-            )
-        );
+        Console.WriteLine("Voulez vous exporter tous les champs dans un fichier XML ? (o/n)");
+        var exportAllFields = Console.ReadLine()?.ToLower() == "o";
+        var doc = new XDocument();
+        if (!exportAllFields)
+        {
+            Console.WriteLine("Veuillez choisir les champs à exporter : 1-Name, 2-Age, 3-City (Ex : 1,2) : ");
+            var fieldMap = new Dictionary<string, string> { { "1", "Name" }, { "2", "Age" }, { "3", "City" } };
+            var fieldsToKeep = Console.ReadLine()
+                .Split(',')
+                .Select(f => fieldMap.GetValueOrDefault(f.Trim()))
+                .Where(f => f != null)
+                .ToList();
+            doc.Add(new XElement("People",
+                    people.Select(p =>
+                    {
+                        var personElement = new XElement("Person");
+                        foreach (var c in fieldsToKeep)
+                        {
+                            personElement.Add(new XElement(c, p.GetType().GetProperty(c)?.GetValue(p))); // ajoute les éléments de la liste à l'élément Person
+                        }
+                        return personElement;
+                    })
+                )
+            );
+        }
+        else
+        {
+            doc.Add( 
+                new XElement("People", // racine du document
+                    people.Select(p => new XElement("Person",
+                        new XElement("Name", p.Name),
+                        new XElement("Age", p.Age),
+                        new XElement("City", p.City)
+                    ))
+                )
+            );
+        }
         doc.Save(filePath); // sauvegarde
     }
 }
