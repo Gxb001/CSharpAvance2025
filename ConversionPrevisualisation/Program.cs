@@ -1,6 +1,8 @@
 ﻿using System.Text.Json;
 using System.Xml.Linq;
 
+// je n'ai pas réussi à intégrer le .gitignore dans ma solution
+
 internal class Person // Definition de la classe Person cohérente à la structure du fichier Peoples.json
 {
     public string Name { get; set; }
