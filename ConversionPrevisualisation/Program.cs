@@ -1,6 +1,11 @@
 ﻿using System.Text.Json;
 using System.Xml.Linq;
 
+using CsvHelper;
+using CsvHelper.Configuration.Attributes;
+using System.Globalization;
+
+
 internal class Person // Définition de la classe Person cohérente au fichier Peoples.json
 {
     public string Name { get; set; }
@@ -189,12 +194,25 @@ internal class Program
         {
             return $"\"{field.Replace("\"", "\"\"")}\"";
         } // permet d'échapper les caractères spéciaux dans une chaîne CSV
-
+    
         var csv = "Name,Age,City\n" + string.Join("\n",
             people.Select(p =>
                 $"{EscapeCsvField(p.Name)},{EscapeCsvField(p.Age.ToString())},{EscapeCsvField(p.City)}"));
         File.WriteAllText(filePath, csv); // écris le contenu dans un fichier CSV
     }
+    
+    // static void ExportToCsv(List<Person> people, string filePath)
+    // {
+    //     using var writer = new StreamWriter(filePath);
+    //     using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+    //     csv.WriteHeader<Person>();
+    //     csv.NextRecord();
+    //     foreach (var person in people)
+    //     {
+    //         csv.WriteRecord(person);
+    //         csv.NextRecord();
+    //     }
+    // }
 
 
     // Export vers XML
