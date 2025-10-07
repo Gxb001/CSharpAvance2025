@@ -237,6 +237,7 @@ internal class Program
                 .Select(f => fieldMap.GetValueOrDefault(f.Trim()))
                 .Where(f => f != null)
                 .ToList();
+            
             doc.Add(new XElement("People",
                     people.Select(p =>
                     {
