@@ -8,11 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="CsvHelper" Version="33.1.0" />
+        <PackageReference Include="CsvHelper" Version="33.1.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Data\serialization\" />
+        <Folder Include="Data\serialization\"/>
     </ItemGroup>
 
 </Project>
