@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Xml.Linq;
 
-internal class Person // Définition de la classe Person cohérente au fichier Peoples.json
+internal class Person // Definition de la classe Person cohérente à la structure du fichier Peoples.json
 {
     public string Name { get; set; }
     public int Age { get; set; }
@@ -30,7 +30,7 @@ internal class Program
                         json); // crée des objets Person en fonction du fichier Peoples.json dans une Liste
 
             // Étape 2 : Proposition de recherche
-            IEnumerable<Person> filteredPeople = people; // IEnumerable expose l'enumerateur 
+            IEnumerable<Person> filteredPeople = people; // IEnumerable de Person
             while (true) // boucle infinie 
             {
                 Console.WriteLine("Voulez-vous appliquer un filtre de recherche ? (o/n)");
@@ -208,27 +208,16 @@ internal class Program
             return $"\"{field.Replace("\"", "\"\"")}\"";
         }
 
-        var header = string.Join(",", fieldsToKeep);
+        var header =
+            string.Join(";",
+                fieldsToKeep); // la virgule simple ne sépare les champs dans des colonnes différentes, en fonction de la langue de Excel
         var csv = header + "\n" + string.Join("\n",
             people.Select(p =>
-                string.Join(",", fieldsToKeep.Select(f =>
+                string.Join(";", fieldsToKeep.Select(f =>
                     EscapeCsvField(p.GetType().GetProperty(f)?.GetValue(p)?.ToString() ?? "")))
             ));
         File.WriteAllText(filePath, csv); // sauvegarde le fichier CSV
     }
-
-    // static void ExportToCsv(List<Person> people, string filePath)
-    // {
-    //     using var writer = new StreamWriter(filePath);
-    //     using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
-    //     csv.WriteHeader<Person>();
-    //     csv.NextRecord();
-    //     foreach (var person in people)
-    //     {
-    //         csv.WriteRecord(person);
-    //         csv.NextRecord();
-    //     }
-    // }
 
 
     // Export vers XML
@@ -251,9 +240,9 @@ internal class Program
                     {
                         var personElement = new XElement("Person");
                         foreach (var c in fieldsToKeep)
-                        {
-                            personElement.Add(new XElement(c, p.GetType().GetProperty(c)?.GetValue(p))); // ajoute les éléments de la liste à l'élément Person
-                        }
+                            personElement.Add(new XElement(c,
+                                p.GetType().GetProperty(c)
+                                    ?.GetValue(p))); // ajoute les éléments de la liste à l'élément Person
                         return personElement;
                     })
                 )
@@ -261,7 +250,7 @@ internal class Program
         }
         else
         {
-            doc.Add( 
+            doc.Add(
                 new XElement("People", // racine du document
                     people.Select(p => new XElement("Person",
                         new XElement("Name", p.Name),
@@ -271,6 +260,7 @@ internal class Program
                 )
             );
         }
+
         doc.Save(filePath); // sauvegarde
     }
 }
