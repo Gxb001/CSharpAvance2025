@@ -1,38 +1,46 @@
 ﻿using System.Diagnostics;
 
 Console.WriteLine("Calcul de performance.");
-
 var sw = Stopwatch.StartNew();
 
-// Séquentiel
-double sumSeq = 1;
+// on éxécute 50 millions de calculs
+double sum = 1;
 for (int i = 0; i < 50_000_000; i++)
 {
-    sumSeq += Math.Sin(i) + Math.Cos(i);
-    sumSeq += Math.Sqrt(i);
-    sumSeq += Math.Exp(i % 10) + Math.Log(i);
-    sumSeq += Math.Pow(i % 100, 3);
-    sumSeq *= 1.0000001;
+    //cosinus 
+    sum += Math.Sin(i) + Math.Cos(i);
+    //Racine carrée
+    sum += Math.Sqrt(i);
+    // Exp + Log
+    sum += Math.Exp(i % 10) + Math.Log(i);
+    //Puissances
+    sum += Math.Pow(i % 100, 3);
+    //Multiplication rule
+    sum *= 1.0000001;
+
 }
-sw.Stop();
-Console.WriteLine($"Séquentiel - Temps de calcul : {sw.ElapsedMilliseconds} ms, Résultat : {sumSeq}");
 
+sw.Stop();
+Console.WriteLine($"Temps de calcul séquentiel : {sw.ElapsedMilliseconds} ms");
+
+
+Console.WriteLine("Calcul de performance.");
 sw.Restart();
-
-// Parallèle
-double sumPar = 1;
-object lockObj = new object();
-Parallel.For(0, 50_000_000, i =>
+// on éxécute 50 millions de calculs
+sum = 1;
+Parallel.For(0, 50_000_000, (i, state) =>
 {
-    double local = Math.Sin(i) + Math.Cos(i);
-    local += Math.Sqrt(i);
-    local += Math.Exp(i % 10) + Math.Log(i);
-    local += Math.Pow(i % 100, 3);
-    local *= 1.0000001;
-    lock (lockObj)
-    {
-        sumPar += local;
-    }
+    //cosinus 
+    sum += Math.Sin(i) + Math.Cos(i);
+    //Racine carrée
+    sum += Math.Sqrt(i);
+    // Exp + Log
+    sum += Math.Exp(i % 10) + Math.Log(i);
+    //Puissances
+    sum += Math.Pow(i % 100, 3);
+    //Multiplication rule
+    sum *= 1.0000001;
 });
+
 sw.Stop();
-Console.WriteLine($"Parallèle - Temps de calcul : {sw.ElapsedMilliseconds} ms, Résultat : {sumPar}");
+Console.WriteLine($"Temps de calcul parallèle : {sw.ElapsedMilliseconds} ms");

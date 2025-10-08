@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a70dbacb-e16e-487b-924e-049f42d55260" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PerfStats/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PerfStats/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +232,7 @@
       <workItem from="1759856530463" duration="5640000" />
       <workItem from="1759863914690" duration="278000" />
       <workItem from="1759864314751" duration="62000" />
-      <workItem from="1759906976649" duration="7011000" />
+      <workItem from="1759906976649" duration="7338000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore for C# project and update workspace.xml settings">
       <option name="closed" value="true" />
@@ -330,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759912840486</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add PerfStats project to measure performance; implement sequential and parallel computation">
+      <option name="closed" value="true" />
+      <created>1759914537266</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1759914537266</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +360,8 @@
     <MESSAGE value="Update project paths and assembly information; enhance JSON file import process" />
     <MESSAGE value="Refactor JSON import process to use dynamic objects; enhance filtering and sorting capabilities" />
     <MESSAGE value="Refactor JSON import process to improve dynamic object handling; enhance filtering and sorting features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor JSON import process to improve dynamic object handling; enhance filtering and sorting features" />
+    <MESSAGE value="Add PerfStats project to measure performance; implement sequential and parallel computation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add PerfStats project to measure performance; implement sequential and parallel computation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
