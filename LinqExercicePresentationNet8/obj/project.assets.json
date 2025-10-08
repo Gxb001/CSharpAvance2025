@@ -27,32 +27,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Utilisateur\\.nuget\\packages\\": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\LinqExercicePresentationNet8\\LinqExercicePresentationNet8.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\CSharpProj\\LinqExercicePresentationNet8\\LinqExercicePresentationNet8.csproj",
       "projectName": "LinqExercicePresentationNet8",
-      "projectPath": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\LinqExercicePresentationNet8\\LinqExercicePresentationNet8.csproj",
-      "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\LinqExercicePresentationNet8\\obj\\",
+      "projectPath": "C:\\Users\\gabri\\Desktop\\CSharpProj\\LinqExercicePresentationNet8\\LinqExercicePresentationNet8.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabri\\Desktop\\CSharpProj\\LinqExercicePresentationNet8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\DataSources.csproj": {
-              "projectPath": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\DataSources.csproj"
+            "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\DataSources.csproj": {
+              "projectPath": "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\DataSources.csproj"
             }
           }
         }
@@ -66,8 +68,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -88,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

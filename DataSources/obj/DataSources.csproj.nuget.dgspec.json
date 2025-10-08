@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\DataSources.csproj": {}
+    "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\DataSources.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\DataSources.csproj": {
+    "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\DataSources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\DataSources.csproj",
+        "projectUniqueName": "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\DataSources.csproj",
         "projectName": "DataSources",
-        "projectPath": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\DataSources.csproj",
-        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilisateur\\Desktop\\CSharpThomas\\DataSources\\obj\\",
+        "projectPath": "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\DataSources.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gabri\\Desktop\\CSharpProj\\DataSources\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,8 +39,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -59,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

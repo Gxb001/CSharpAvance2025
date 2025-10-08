@@ -12,7 +12,52 @@
   <component name="ChangeListManager">
     <list default="true" id="a70dbacb-e16e-487b-924e-049f42d55260" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/CSharpAvance2025.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/CSharpAvance2025.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/CSharpAvance2025.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/CSharpAvance2025.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConversionPrevisualisation/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConversionPrevisualisation/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/DataSources.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/DataSources.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/DataSources.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/DataSources.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataSources/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/LinqExercicePresentationNet8.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/LinqExercicePresentationNet8.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/LinqExercicePresentationNet8.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/LinqExercicePresentationNet8.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/ZooManagement.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/ZooManagement.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/ZooManagement.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/ZooManagement.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +87,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Gxb001/CSharpAvance2025.git&quot;,
-    &quot;accountId&quot;: &quot;14064217-5d55-4441-9e4e-88123704262d&quot;
+    &quot;accountId&quot;: &quot;8161fddd-c024-4ccd-b7d8-464b87f3a2e0&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -199,6 +244,9 @@
       <workItem from="1759821439451" duration="9474000" />
       <workItem from="1759854799374" duration="1166000" />
       <workItem from="1759856530463" duration="5640000" />
+      <workItem from="1759863914690" duration="278000" />
+      <workItem from="1759864314751" duration="62000" />
+      <workItem from="1759906976649" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore for C# project and update workspace.xml settings">
       <option name="closed" value="true" />

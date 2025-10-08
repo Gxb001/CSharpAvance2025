@@ -16,12 +16,24 @@ internal class Program
     {
         try
         {
-            // Etape 1 : Importer le JSON depuis le fichier Data/Peoples.json
-            var jsonFilePath = "../../../Data/Peoples.json"; //chemin du dossier Data
-            if (!File.Exists(jsonFilePath))
+            // Etape 1 : Demander le chemin du fichier JSON à l'utilisateur
+            string jsonFilePath;
+            while (true)
             {
-                Console.WriteLine("Erreur : Le fichier Data/Peoples.json n'existe pas.");
-                return;
+                Console.WriteLine("Entrez le chemin du fichier JSON à importer (ex: ../../../Data/Peoples.json) :");
+                Console.WriteLine( ); // retour à la ligne pour une meilleure lisibilité
+                jsonFilePath = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(jsonFilePath) || !jsonFilePath.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Erreur : L'extension du fichier doit être .json. Veuillez réessayer.");
+                    continue;
+                }
+                if (!File.Exists(jsonFilePath))
+                {
+                    Console.WriteLine($"Erreur : Le fichier {jsonFilePath} n'existe pas. Veuillez réessayer.");
+                    continue;
+                }
+                break;
             }
 
             var json = File.ReadAllText(jsonFilePath); // charge le dossier json
