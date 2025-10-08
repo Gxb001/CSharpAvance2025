@@ -4,6 +4,8 @@
 var allAlbums = ListAlbumsData.ListAlbums;
 var allArtists = ListArtistsData.ListArtists;
 
+// decommenter les exercices un par un
+
 
 // Ex : 1
 // // Afficher tous les albums dans le terminal avec leur numéro
