@@ -4,6 +4,7 @@
     <projectFile>CSharpAvance2025/CSharpAvance2025.csproj</projectFile>
     <projectFile>ConversionPrevisualisation/ConversionPrevisualisation.csproj</projectFile>
     <projectFile>LinqExercicePresentationNet8/LinqExercicePresentationNet8.csproj</projectFile>
+    <projectFile>PerfStats/PerfStats.csproj</projectFile>
     <projectFile>ZooManagement/ZooManagement.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
@@ -12,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a70dbacb-e16e-487b-924e-049f42d55260" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConversionPrevisualisation/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConversionPrevisualisation/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSharpAvance2025.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,7 @@
     <setting file="mock://C:/Users/gabri/Desktop/CSharpProj/ConversionPrevisualisation/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/gabri/Desktop/CSharpProj/ConversionPrevisualisation/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/gabri/Desktop/CSharpProj/ConversionPrevisualisation/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PerfStats/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -63,31 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.ConversionPrevisualisation.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.LinqExercicePresentationNet8.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.ConversionPrevisualisation.executor": "Run",
+    ".NET Project.LinqExercicePresentationNet8.executor": "Run",
+    ".NET Project.PerfStats.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Project.ConversionPrevisualisation">
+}]]></component>
+  <component name="RunManager" selected=".NET Project.PerfStats">
     <configuration name="CSharpAvance2025" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -157,6 +160,29 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="PerfStats" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/PerfStats/PerfStats.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="ZooManagement" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -181,6 +207,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue=".NET Project.PerfStats" />
       <item itemvalue=".NET Project.ConversionPrevisualisation" />
       <item itemvalue=".NET Project.CSharpAvance2025" />
       <item itemvalue=".NET Project.LinqExercicePresentationNet8" />
@@ -205,7 +232,7 @@
       <workItem from="1759856530463" duration="5640000" />
       <workItem from="1759863914690" duration="278000" />
       <workItem from="1759864314751" duration="62000" />
-      <workItem from="1759906976649" duration="5246000" />
+      <workItem from="1759906976649" duration="7011000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore for C# project and update workspace.xml settings">
       <option name="closed" value="true" />
@@ -295,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759909674293</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Refactor JSON import process to improve dynamic object handling; enhance filtering and sorting features">
+      <option name="closed" value="true" />
+      <created>1759912840486</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1759912840486</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +351,8 @@
     <MESSAGE value="Update workspace settings and clean up project files" />
     <MESSAGE value="Update project paths and assembly information; enhance JSON file import process" />
     <MESSAGE value="Refactor JSON import process to use dynamic objects; enhance filtering and sorting capabilities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor JSON import process to use dynamic objects; enhance filtering and sorting capabilities" />
+    <MESSAGE value="Refactor JSON import process to improve dynamic object handling; enhance filtering and sorting features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor JSON import process to improve dynamic object handling; enhance filtering and sorting features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

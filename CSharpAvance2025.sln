@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooManagement", "ZooManagem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversionPrevisualisation", "ConversionPrevisualisation\ConversionPrevisualisation.csproj", "{0F36658C-733B-4C97-A44D-FCB095CCA737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfStats", "PerfStats\PerfStats.csproj", "{8B711373-A715-4BD5-BA93-866AAA142757}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F36658C-733B-4C97-A44D-FCB095CCA737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B711373-A715-4BD5-BA93-866AAA142757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B711373-A715-4BD5-BA93-866AAA142757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B711373-A715-4BD5-BA93-866AAA142757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B711373-A715-4BD5-BA93-866AAA142757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
