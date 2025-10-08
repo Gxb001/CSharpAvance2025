@@ -1,13 +1,9 @@
 ﻿using System.Text.Json;
 using System.Xml.Linq;
 
-// je n'ai pas réussi à intégrer le .gitignore dans ma solution
-
-internal class Person // Definition de la classe Person cohérente à la structure du fichier Peoples.json
+internal class DynamicObject
 {
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public string City { get; set; }
+    public Dictionary<string, object> Properties { get; set; } = new();
 }
 
 internal class Program
@@ -16,12 +12,10 @@ internal class Program
     {
         try
         {
-            // Etape 1 : Demander le chemin du fichier JSON à l'utilisateur
             string jsonFilePath;
             while (true)
             {
-                Console.WriteLine("Entrez le chemin du fichier JSON à importer (ex: ../../../Data/Peoples.json) :");
-                Console.WriteLine( ); // retour à la ligne pour une meilleure lisibilité
+                Console.WriteLine("Entrez le chemin du fichier JSON à importer :");
                 jsonFilePath = Console.ReadLine();
                 if (string.IsNullOrWhiteSpace(jsonFilePath) || !jsonFilePath.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
                 {
@@ -35,140 +29,104 @@ internal class Program
                 }
                 break;
             }
+            var json = File.ReadAllText(jsonFilePath);
+            var objects = JsonSerializer.Deserialize<List<Dictionary<string, object>>>(json)
+                ?.Select(dict => new DynamicObject { Properties = dict })
+                .ToList();
 
-            var json = File.ReadAllText(jsonFilePath); // charge le dossier json
-            var people =
-                JsonSerializer
-                    .Deserialize<
-                        List<Person>>(
-                        json); // crée des objets Person en fonction du fichier Peoples.json dans une Liste
-
-            // Étape 2 : Proposition de recherche
-            IEnumerable<Person> filteredPeople = people; // IEnumerable de Person
-            while (true) // boucle infinie 
+            if (objects == null || objects.Count == 0)
             {
-                Console.WriteLine("Voulez-vous appliquer un filtre de recherche ? (o/n)");
-                var applyFilter = Console.ReadLine()?.ToLower() == "o";
-
-                if (!applyFilter) break; // on skip
-
-                Console.WriteLine("Choisissez le champ pour la recherche : 1-Name, 2-Age, 3-City");
-                var fieldChoice = Console.ReadLine();
-                Console.Write("Entrez les caractères à rechercher (pour Age : >10 ou <10) : ");
-                var value = Console.ReadLine();
-
-                switch (fieldChoice)
-                {
-                    case "1":
-                        filteredPeople =
-                            filteredPeople.Where(p => p.Name.Contains(value, StringComparison.OrdinalIgnoreCase));
-                        break;
-                    case "2":
-                        if (value.StartsWith(">"))
-                        {
-                            if (int.TryParse(value[1..], out var minAge))
-                                filteredPeople = filteredPeople.Where(p => p.Age > minAge);
-                            else
-                                Console.WriteLine("Valeur invalide pour l'âge (>).");
-                        }
-                        else if (value.StartsWith("<"))
-                        {
-                            if (int.TryParse(value[1..], out var maxAge))
-                                filteredPeople = filteredPeople.Where(p => p.Age < maxAge);
-                            else
-                                Console.WriteLine("Valeur invalide pour l'âge (<).");
-                        }
-                        else
-                        {
-                            if (int.TryParse(value, out var ageValue))
-                                filteredPeople = filteredPeople.Where(p => p.Age == ageValue);
-                            else
-                                Console.WriteLine("Valeur invalide pour l'âge.");
-                        }
-
-                        break;
-                    case "3":
-                        filteredPeople =
-                            filteredPeople.Where(p => p.City.Contains(value, StringComparison.OrdinalIgnoreCase));
-                        break;
-                    default:
-                        Console.WriteLine("Choix invalide, aucun filtre appliqué.");
-                        break;
-                }
-
-                // Affichage des données actuelles
-                DisplayPeople(filteredPeople);
-
-                Console.WriteLine("Voulez-vous refiltrer ou passer à la prochaine étape ? (r/n)");
-                if (Console.ReadLine()?.ToLower() != "r") break; // retour au tri
+                Console.WriteLine("Aucune donnée trouvée dans le fichier JSON.");
+                return;
             }
 
-            // Étape tri : Choix du champ et ordre, en boucle
-            var sortedPeople = filteredPeople;
+            var availableFields = objects.First().Properties.Keys.ToList();
+
+            Console.WriteLine("\nÉtat initial de la liste :");
+            DisplayObjects(objects, availableFields);
+
+            IEnumerable<DynamicObject> filteredObjects = objects;
             while (true)
             {
-                Console.WriteLine("Choisissez le tri : 1-Par Age, 2-Par Name, 3-Par City");
+                Console.WriteLine("Voulez-vous appliquer un filtre de recherche ? (o/n)");
+                var applyFilter = GetValidYesNoInput() == "o";
+                if (!applyFilter) break;
+
+                Console.WriteLine("Choisissez un champ pour la recherche :");
+                for (int i = 0; i < availableFields.Count; i++)
+                    Console.WriteLine($"{i + 1}-{availableFields[i]}");
+                var fieldChoice = Console.ReadLine();
+                if (!int.TryParse(fieldChoice, out int fieldIndex) || fieldIndex < 1 || fieldIndex > availableFields.Count)
+                {
+                    Console.WriteLine("Choix invalide, aucun filtre appliqué.");
+                    continue;
+                }
+                var fieldName = availableFields[fieldIndex - 1];
+
+                Console.Write($"Entrez la valeur à rechercher (pour les nombres : >10 ou <10) : ");
+                var value = Console.ReadLine();
+
+                filteredObjects = FilterObjects(filteredObjects, fieldName, value);
+
+                Console.WriteLine("\nÉtat de la liste après filtrage :");
+                DisplayObjects(filteredObjects, availableFields);
+
+                Console.WriteLine("Voulez-vous filtrer à nouveau ou passer à l'étape suivante ? (o/n)");
+                if (GetValidYesNoInput() != "o") break;
+            }
+
+            var sortedObjects = filteredObjects;
+            while (true)
+            {
+                Console.WriteLine("Choisissez un champ pour le tri :");
+                for (int i = 0; i < availableFields.Count; i++)
+                    Console.WriteLine($"{i + 1}-{availableFields[i]}");
                 var sortChoice = Console.ReadLine();
+                if (!int.TryParse(sortChoice, out int sortIndex) || sortIndex < 1 || sortIndex > availableFields.Count)
+                {
+                    Console.WriteLine("Choix invalide, tri par le premier champ par défaut.");
+                    sortIndex = 1;
+                }
+                var sortField = availableFields[sortIndex - 1];
+
                 Console.WriteLine("Ordre : 1-Croissant, 2-Décroissant");
                 var orderChoice = Console.ReadLine();
 
-                switch (sortChoice)
-                {
-                    case "1":
-                        sortedPeople = orderChoice == "1"
-                            ? sortedPeople.OrderBy(p => p.Age)
-                            : sortedPeople.OrderByDescending(p => p.Age);
-                        break;
-                    case "2":
-                        sortedPeople = orderChoice == "1"
-                            ? sortedPeople.OrderBy(p => p.Name)
-                            : sortedPeople.OrderByDescending(p => p.Name);
-                        break;
-                    case "3":
-                        sortedPeople = orderChoice == "1"
-                            ? sortedPeople.OrderBy(p => p.City)
-                            : sortedPeople.OrderByDescending(p => p.City);
-                        break;
-                    default:
-                        Console.WriteLine("Choix invalide, tri par défaut (Age croissant).");
-                        sortedPeople = sortedPeople.OrderBy(p => p.Age);
-                        break;
-                }
+                sortedObjects = SortObjects(sortedObjects, sortField, orderChoice == "2");
 
-                // Affichage des données après tri
-                DisplayPeople(sortedPeople);
+                Console.WriteLine("\nÉtat de la liste après tri :");
+                DisplayObjects(sortedObjects, availableFields);
 
-                Console.WriteLine("Voulez-vous encore trier ? (o/n)");
-                if (Console.ReadLine()?.ToLower() != "o") break; // Fin des tri
+                Console.WriteLine("Voulez-vous trier à nouveau ? (o/n)");
+                if (GetValidYesNoInput() != "o") break;
             }
 
-            // Étape export
-            var finalResults = sortedPeople.ToList();
+            var finalResults = sortedObjects.ToList();
             Console.WriteLine("Voulez-vous exporter les résultats ? (o/n)");
-            if (Console.ReadLine()?.ToLower() == "o")
+            if (GetValidYesNoInput() == "o")
             {
                 Console.WriteLine("Choisissez le format : 1-CSV, 2-XML");
                 var exportChoice = Console.ReadLine();
 
-                // Affichage des données finales
-                DisplayPeople(finalResults);
+                Console.WriteLine("\nListe finale à exporter :");
+                DisplayObjects(finalResults, availableFields);
 
                 Console.WriteLine("Confirmer l'export ? (o/n)");
-                if (Console.ReadLine()?.ToLower() == "o")
+                if (GetValidYesNoInput() == "o")
                 {
                     Console.Write("Entrez le nom du fichier (sans extension) : ");
                     var fileName = Console.ReadLine();
                     var exportDir = "../../../Data/serialization";
-                    Directory.CreateDirectory(exportDir); // Créer le dossier si inexistant
+                    Directory.CreateDirectory(exportDir);
 
                     switch (exportChoice)
                     {
                         case "1":
-                            ExportToCsv(finalResults, Path.Combine(exportDir, $"{fileName}.csv"));
+                            ExportToCsv(finalResults, Path.Combine(exportDir, $"{fileName}.csv"), availableFields);
                             Console.WriteLine($"Exporté vers {Path.Combine(exportDir, $"{fileName}.csv")}");
                             break;
                         case "2":
-                            ExportToXml(finalResults, Path.Combine(exportDir, $"{fileName}.xml"));
+                            ExportToXml(finalResults, Path.Combine(exportDir, $"{fileName}.xml"), availableFields);
                             Console.WriteLine($"Exporté vers {Path.Combine(exportDir, $"{fileName}.xml")}");
                             break;
                         default:
@@ -188,94 +146,122 @@ internal class Program
         }
     }
 
-    // affiche l'etat de la liste actuelle
-    private static void DisplayPeople(IEnumerable<Person> people)
+    private static string GetValidYesNoInput()
     {
-        var results = people.ToList();
-        Console.WriteLine("\nDonnées actuelles :");
-        foreach (var person in results) Console.WriteLine($"{person.Name}, {person.Age} ans, {person.City}");
+        while (true)
+        {
+            var input = Console.ReadLine()?.ToLower();
+            if (input == "o" || input == "n")
+                return input;
+            Console.WriteLine("Erreur : Veuillez entrer 'o' ou 'n' uniquement. Réessayez :");
+        }
     }
 
-    // Export CSV
-    private static void ExportToCsv(List<Person> people, string filePath)
+    private static IEnumerable<DynamicObject> FilterObjects(IEnumerable<DynamicObject> objects, string field, string value)
     {
-        Console.WriteLine("Voulez-vous exporter tous les champs dans un fichier CSV ? (o/n)");
-        var exportAllFields = Console.ReadLine()?.ToLower() == "o";
+        if (string.IsNullOrWhiteSpace(value)) return objects;
+        if (value.StartsWith(">"))
+        {
+            if (double.TryParse(value[1..], out var min))
+                return objects.Where(o => o.Properties.TryGetValue(field, out var v) && double.TryParse(v?.ToString(), out var num) && num > min);
+        }
+        else if (value.StartsWith("<"))
+        {
+            if (double.TryParse(value[1..], out var max))
+                return objects.Where(o => o.Properties.TryGetValue(field, out var v) && double.TryParse(v?.ToString(), out var num) && num < max);
+        }
+        else
+        {
+            return objects.Where(o => o.Properties.TryGetValue(field, out var v) && v?.ToString().Contains(value, StringComparison.OrdinalIgnoreCase) == true);
+        }
+        return objects;
+    }
+
+    private static IEnumerable<DynamicObject> SortObjects(IEnumerable<DynamicObject> objects, string field, bool descending)
+    {
+        return descending
+            ? objects.OrderByDescending(o => o.Properties.TryGetValue(field, out var v) ? v?.ToString() : "")
+            : objects.OrderBy(o => o.Properties.TryGetValue(field, out var v) ? v?.ToString() : "");
+    }
+
+    private static void DisplayObjects(IEnumerable<DynamicObject> objects, List<string> fields)
+    {
+        var results = objects.ToList();
+        if (results.Count == 0)
+        {
+            Console.WriteLine("La liste est vide.");
+            return;
+        }
+        foreach (var obj in results)
+        {
+            Console.WriteLine(string.Join(", ", fields.Select(f => $"{f}: {obj.Properties.GetValueOrDefault(f)}")));
+        }
+    }
+
+    private static void ExportToCsv(List<DynamicObject> objects, string filePath, List<string> fields)
+    {
+        Console.WriteLine("Exporter tous les champs en CSV ? (o/n)");
+        var exportAllFields = GetValidYesNoInput() == "o";
         List<string> fieldsToKeep;
         if (!exportAllFields)
         {
-            Console.WriteLine("Veuillez choisir les champs à exporter : 1-Name, 2-Age, 3-City (Ex : 1,2) : ");
-            var fieldMap = new Dictionary<string, string> { { "1", "Name" }, { "2", "Age" }, { "3", "City" } };
+            Console.WriteLine("Choisissez les champs à exporter (ex : 1,2) :");
+            for (int i = 0; i < fields.Count; i++)
+                Console.WriteLine($"{i + 1}-{fields[i]}");
             fieldsToKeep = Console.ReadLine()
                 .Split(',')
-                .Select(f => fieldMap.GetValueOrDefault(f.Trim()))
+                .Select(f => int.TryParse(f.Trim(), out int idx) && idx >= 1 && idx <= fields.Count ? fields[idx - 1] : null)
                 .Where(f => f != null)
                 .ToList();
         }
         else
         {
-            fieldsToKeep = new List<string> { "Name", "Age", "City" };
+            fieldsToKeep = fields;
         }
 
-        string EscapeCsvField(string field)
-        {
-            return $"\"{field.Replace("\"", "\"\"")}\"";
-        }
+        string EscapeCsvField(string field) => $"\"{field.Replace("\"", "\"\"")}\"";
 
-        var header =
-            string.Join(";",
-                fieldsToKeep); // la virgule simple ne sépare les champs dans des colonnes différentes, en fonction de la langue de Excel
+        var header = string.Join(";", fieldsToKeep);
         var csv = header + "\n" + string.Join("\n",
-            people.Select(p =>
+            objects.Select(o =>
                 string.Join(";", fieldsToKeep.Select(f =>
-                    EscapeCsvField(p.GetType().GetProperty(f)?.GetValue(p)?.ToString() ?? "")))
+                    EscapeCsvField(o.Properties.GetValueOrDefault(f)?.ToString() ?? "")))
             ));
-        File.WriteAllText(filePath, csv); // sauvegarde le fichier CSV
+        File.WriteAllText(filePath, csv);
     }
 
-
-    // Export vers XML
-    private static void ExportToXml(List<Person> people, string filePath)
+    private static void ExportToXml(List<DynamicObject> objects, string filePath, List<string> fields)
     {
-        Console.WriteLine("Voulez vous exporter tous les champs dans un fichier XML ? (o/n)");
-        var exportAllFields = Console.ReadLine()?.ToLower() == "o";
-        var doc = new XDocument();
+        Console.WriteLine("Exporter tous les champs en XML ? (o/n)");
+        var exportAllFields = GetValidYesNoInput() == "o";
+        List<string> fieldsToKeep;
         if (!exportAllFields)
         {
-            Console.WriteLine("Veuillez choisir les champs à exporter : 1-Name, 2-Age, 3-City (Ex : 1,2) : ");
-            var fieldMap = new Dictionary<string, string> { { "1", "Name" }, { "2", "Age" }, { "3", "City" } };
-            var fieldsToKeep = Console.ReadLine()
+            Console.WriteLine("Choisissez les champs à exporter (ex : 1,2) :");
+            for (int i = 0; i < fields.Count; i++)
+                Console.WriteLine($"{i + 1}-{fields[i]}");
+            fieldsToKeep = Console.ReadLine()
                 .Split(',')
-                .Select(f => fieldMap.GetValueOrDefault(f.Trim()))
+                .Select(f => int.TryParse(f.Trim(), out int idx) && idx >= 1 && idx <= fields.Count ? fields[idx - 1] : null)
                 .Where(f => f != null)
                 .ToList();
-            
-            doc.Add(new XElement("People",
-                    people.Select(p =>
-                    {
-                        var personElement = new XElement("Person");
-                        foreach (var c in fieldsToKeep)
-                            personElement.Add(new XElement(c,
-                                p.GetType().GetProperty(c)
-                                    ?.GetValue(p))); // ajoute les éléments de la liste à l'élément Person
-                        return personElement;
-                    })
-                )
-            );
         }
         else
         {
-            doc.Add(
-                new XElement("People", // racine du document
-                    people.Select(p => new XElement("Person",
-                        new XElement("Name", p.Name),
-                        new XElement("Age", p.Age),
-                        new XElement("City", p.City)
-                    ))
-                )
-            );
+            fieldsToKeep = fields;
         }
 
-        doc.Save(filePath); // sauvegarde
+        var doc = new XDocument(
+            new XElement("Objets",
+                objects.Select(o =>
+                {
+                    var objElement = new XElement("Objet");
+                    foreach (var f in fieldsToKeep)
+                        objElement.Add(new XElement(f, o.Properties.GetValueOrDefault(f)));
+                    return objElement;
+                })
+            )
+        );
+        doc.Save(filePath);
     }
 }
