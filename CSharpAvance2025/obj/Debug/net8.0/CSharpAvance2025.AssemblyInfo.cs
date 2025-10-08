@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSharpAvance2025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2738305b6534836ef9d64aeacf173db591df416")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0c98f7ebd9d73c26b0a1f69f018688cb9a39460")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSharpAvance2025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSharpAvance2025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversionPrevisualisation"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfStats", "PerfStats\PerfStats.csproj", "{8B711373-A715-4BD5-BA93-866AAA142757}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageOptimiser", "ImageOptimiser\ImageOptimiser.csproj", "{5343CA08-7323-41FC-8FDD-2A78B5712A49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{8B711373-A715-4BD5-BA93-866AAA142757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B711373-A715-4BD5-BA93-866AAA142757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B711373-A715-4BD5-BA93-866AAA142757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5343CA08-7323-41FC-8FDD-2A78B5712A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5343CA08-7323-41FC-8FDD-2A78B5712A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5343CA08-7323-41FC-8FDD-2A78B5712A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5343CA08-7323-41FC-8FDD-2A78B5712A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
