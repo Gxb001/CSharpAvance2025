@@ -13,68 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a70dbacb-e16e-487b-924e-049f42d55260" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ImageOptimiser/ReadmePerso.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharpAvance2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/bin/Debug/net8.0/CSharpAvance2025.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/CSharpAvance2025.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/ref/CSharpAvance2025.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/ref/CSharpAvance2025.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/refint/CSharpAvance2025.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/Debug/net8.0/refint/CSharpAvance2025.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSharpAvance2025/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CSharpAvance2025/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConversionPrevisualisation/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConversionPrevisualisation/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/bin/Debug/net8.0/DataSources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/bin/Debug/net8.0/DataSources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/bin/Debug/net8.0/DataSources.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/bin/Debug/net8.0/DataSources.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/DataSources.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/ref/DataSources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/ref/DataSources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/refint/DataSources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/Debug/net8.0/refint/DataSources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSources/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataSources/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/DataSources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/DataSources.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/DataSources.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/DataSources.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/bin/Debug/net8.0/LinqExercicePresentationNet8.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/LinqExercicePresentationNet8.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/ref/LinqExercicePresentationNet8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/ref/LinqExercicePresentationNet8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/refint/LinqExercicePresentationNet8.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/Debug/net8.0/refint/LinqExercicePresentationNet8.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LinqExercicePresentationNet8/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PerfStats/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PerfStats/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/bin/Debug/net8.0/ZooManagement.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ZooManagement.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ref/ZooManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/ref/ZooManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/refint/ZooManagement.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/Debug/net8.0/refint/ZooManagement.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooManagement/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ZooManagement/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageOptimiser/ImageOptimiser.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ImageOptimiser/ImageOptimiser.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageOptimiser/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageOptimiser/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageOptimiser/ReadmePerso.md" beforeDir="false" afterPath="$PROJECT_DIR$/ImageOptimiser/ReadmePerso.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +261,7 @@
       <workItem from="1759856530463" duration="5640000" />
       <workItem from="1759863914690" duration="278000" />
       <workItem from="1759864314751" duration="62000" />
-      <workItem from="1759906976649" duration="12343000" />
+      <workItem from="1759906976649" duration="13115000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore for C# project and update workspace.xml settings">
       <option name="closed" value="true" />
@@ -433,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759914948402</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add ImageOptimiser project; implement sequential and parallel image processing with performance reporting">
+      <option name="closed" value="true" />
+      <created>1759929195427</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759929195427</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +407,8 @@
     <MESSAGE value="Refactor JSON import process to improve dynamic object handling; enhance filtering and sorting features" />
     <MESSAGE value="Add PerfStats project to measure performance; implement sequential and parallel computation" />
     <MESSAGE value="Refactor performance calculation in Program.cs; streamline sequential and parallel execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor performance calculation in Program.cs; streamline sequential and parallel execution" />
+    <MESSAGE value="Add ImageOptimiser project; implement sequential and parallel image processing with performance reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ImageOptimiser project; implement sequential and parallel image processing with performance reporting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

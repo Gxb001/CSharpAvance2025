@@ -9,7 +9,7 @@
 ## Observations
 
 - La version parallèle utilise Parallel.ForEachAsync pour traiter les images en parallèle
-- Les performances dépendent du nombre de cœurs CPU disponibles
+- Les performances dépendent du nombre de coeurs CPU disponibles
 - La version parallèle est généralement plus rapide pour un grand nombre d'images
 - Les gains peuvent varier selon le matériel et la taille des images
 

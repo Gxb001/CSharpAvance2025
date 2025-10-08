@@ -182,8 +182,8 @@ internal class ImageProcessor
 - Package NuGet SixLabors.ImageSharp installé (`dotnet add package SixLabors.ImageSharp`)
 
 ## Dossiers de sortie
-- Version séquentielle : {Path.Combine(OutputFolder, "Sequential")}
-- Version parallèle : {Path.Combine(OutputFolder, "Parallel")}
+- Version séquentielle : {Path.Combine(OutputFolder, "Sequentielle")}
+- Version parallèle : {Path.Combine(OutputFolder, "Parallele")}
 ";
 
         // écrire le fichier
