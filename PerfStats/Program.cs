@@ -6,20 +6,18 @@ Console.WriteLine("Calcul de performance.");
 var swloop = Stopwatch.StartNew();
 double sumloop = 1;
 for (var e = 0; e < 10; e++)
+for (var i = 0; i < 50_000_000; i++)
 {
-    for (var i = 0; i < 50_000_000; i++)
-    {
-        //cosinus 
-        sumloop += Math.Sin(i) + Math.Cos(i);
-        //Racine carrée
-        sumloop += Math.Sqrt(i);
-        // Exp + Log
-        sumloop += Math.Exp(i % 10) + Math.Log(i);
-        //Puissances
-        sumloop += Math.Pow(i % 100, 3);
-        //Multiplication rule
-        sumloop *= 1.0000001;
-    }
+    //cosinus 
+    sumloop += Math.Sin(i) + Math.Cos(i);
+    //Racine carrée
+    sumloop += Math.Sqrt(i);
+    // Exp + Log
+    sumloop += Math.Exp(i % 10) + Math.Log(i);
+    //Puissances
+    sumloop += Math.Pow(i % 100, 3);
+    //Multiplication rule
+    sumloop *= 1.0000001;
 }
 
 swloop.Stop();
